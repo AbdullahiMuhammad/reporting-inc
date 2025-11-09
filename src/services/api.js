@@ -5,3 +5,4 @@ const axiosInstance = axios.create({
     },
     withCredentials: true
 });
+export const proxy = "https://reporting-inc-server.vercel.app/api";
