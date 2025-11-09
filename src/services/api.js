@@ -1,8 +1,10 @@
-const axiosInstance = axios.create({
-    
+import axios from "axios";
+
+ const axiosInstance = axios.create({
     headers: {
-        Authorization: `Bearer ${localStorage.getItem('token')}`
-    },
-    withCredentials: true
+        authorization: `Bearer ${localStorage.getItem('token')}`
+    }
 });
-export const proxy = "https://reporting-inc-server.vercel.app/api";
+
+export const proxy = "https://reportingint-server.vercel.app/api";
+export default axiosInstance;
